@@ -1,0 +1,58 @@
+<div class="row cont-general">
+    <div class="col-6 cont-calculadora">
+        <div class="row">
+            <div class="col-12">
+                <input type="text" [(ngModel)]="pantalla">
+            </div>
+            <div class="col-4">
+                <button class="btn" (click)="AdjuntarDigito(1)" >1</button>
+            </div>
+            <div class="col-4">
+                <button class="btn" (click)="AdjuntarDigito(2)">2</button>
+            </div>
+            <div class="col-4">
+                <button class="btn" (click)="AdjuntarDigito(3)">3</button>
+            </div>
+            <div class="col-4">
+                <button class="btn" (click)="AdjuntarDigito(4)">4</button>
+            </div>
+            <div class="col-4">
+                <button class="btn" (click)="AdjuntarDigito(5)">5</button>
+            </div>
+            <div class="col-4">
+                <button class="btn" (click)="AdjuntarDigito(6)">6</button>
+            </div>
+            <div class="col-4">
+                <button class="btn" (click)="AdjuntarDigito(7)">7</button>
+            </div>
+            <div class="col-4">
+                <button class="btn" (click)="AdjuntarDigito(8)">8</button>
+            </div>
+            <div class="col-4">
+                <button class="btn" (click)="AdjuntarDigito(9)">9</button>
+            </div>
+            <div class="col-4">
+                <button class="btn" (click)="sumar('+')">+</button>
+            </div>
+            <div class="col-4">
+                <button class="btn" (click)="AdjuntarDigito(0)">0</button>
+            </div>
+            <div class="col-4">
+                <button class="btn" (click)="restar('-')">-</button>
+            </div>
+            <div class="col-4">
+                <button class="btn" (click)="dividir('/')">/</button>
+            </div>
+            <div class="col-4">
+                <button class="btn" (click)="multiplicar('X')">X</button>
+            </div>
+            <div class="col-4">
+                <button class="btn" (click)="igual()">=</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <h1>TOTAL DE COMPRAS</h1>
+        <h3>$ {{resultado}}</h3>
+    </div>
+</div>

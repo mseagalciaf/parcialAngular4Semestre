@@ -1,0 +1,22 @@
+<div class="row cont-principal">
+    <div class="col-6" *ngIf="resultado">
+        <div class="container">
+            <div class="col-12">
+                <img [src]="resultadoImg" width="250" height="266">
+            </div>
+        </div>
+        <h2>Estado: {{resultadoDescripcion}}</h2>
+        <h4>Resultado: {{resultado}}</h4>
+    </div>
+    <div class="col-6">
+        <div class="mb-3">
+            <label for="inputPeso" class="form-label" >Peso Kg</label>
+            <input type="text" class="form-control" [(ngModel)]="peso" id="inputPeso" placeholder="Escribe el peso">
+        </div>
+        <div class="mb-3">
+            <label for="inputAltura" class="form-label">Altura cm</label>
+            <input type="text" class="form-control" [(ngModel)]="altura" id="inputAltura" placeholder="Escribe la altura">
+        </div>
+        <button type="submit" class="btn btn-info" (click)="calcular()">Calcular</button>
+    </div>
+</div>

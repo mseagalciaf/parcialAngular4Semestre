@@ -1,0 +1,26 @@
+<div class="row cont-principal">
+    <div class="col-6">
+        <div class="mb-3">
+            <label for="inputNombre" class="form-label" >Nombre estudiante</label>
+            <input type="text" class="form-control" [(ngModel)]="nombre" id="inputNombre" placeholder="Escribe un nombre">
+        </div>
+        <div class="mb-3">
+            <label for="inputNota" class="form-label">Nota</label>
+            <input type="text" class="form-control" [(ngModel)]="nota" id="inputNota" placeholder="Escribe una nota">
+        </div>
+        <div class="mb-3">
+            <label for="inputEdad" class="form-label">Edad</label>
+            <input type="text" class="form-control" [(ngModel)]="edad" id="inputEdad" placeholder="Escribe la edad">
+        </div>
+        <button type="submit" class="btn btn-success" (click)="agregar()">Agregar</button>
+    </div>
+    <div class="col-6 cont-notas">
+        <div>
+            <ul>
+                <h4 *ngIf="!estudiantes[0]" style="color: red;">No hay notas</h4>
+                <h4 *ngIf="estudiantes[0]">Notas:</h4>
+                <li *ngFor="let estudiante of estudiantes">{{estudiante.nombre}} Nota:{{estudiante.nota}} Edad:{{estudiante.edad}}  </li>
+            </ul>
+        </div>
+    </div>
+</div>

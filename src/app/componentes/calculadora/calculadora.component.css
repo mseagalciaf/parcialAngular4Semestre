@@ -1,0 +1,19 @@
+input{
+    width: 105%;
+}
+button{
+    border: black solid 1px;
+    width: 100%;
+    margin: 6%;
+}
+div{
+    width: 100%;
+}
+.cont-general{
+    margin-top: 5%;
+}
+.cont-calculadora{
+    padding: 2%;
+    border: black solid 1px;
+    box-shadow: #BEBEBE 10px 10px;
+}
